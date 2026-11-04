@@ -1,3 +1,4 @@
+import BotonAgregar from "../atoms/botonAgregarProducto";
 import BotonProducto from "../atoms/BotonProducto";
 
 interface Cardprops{
@@ -25,7 +26,21 @@ function CardProductos({id,titulo,descripcion,precio,stock,imagen}: Cardprops){
                 <p className="card-text">${precio}</p>
                 <p className="card-text">Stock:{stock}</p>
                 <div className="mt-auto">
-                <BotonProducto id={id}/>
+                <BotonProducto id={id}
+                titulo={titulo}
+                descripcion={descripcion}
+                precio={precio}
+                stock={stock}
+                imagen={imagen}/>
+                <br />
+                <br />
+                <BotonAgregar
+                id={id}
+                titulo={titulo}
+                descripcion={descripcion}
+                precio={precio}
+                stock={stock}
+                imagen={imagen}/>
                 </div>
                 
             </div>

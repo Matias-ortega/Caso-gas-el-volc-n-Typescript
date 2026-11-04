@@ -11,6 +11,8 @@ function Barra(){
                 inicio</Link>
                 <Link className="nav-link text-white" to="/productos">
                 productos</Link>
+                <Link className="nav-link text-white" to="/carrito">
+                Carrito</Link>
             </div>
             
         </div>

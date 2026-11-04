@@ -1,10 +1,24 @@
 import { Link } from "react-router-dom";
-interface BotonProductoProps{
-    id: number;
+
+interface BotonProductoProps {
+  id: number;
+  titulo: string;
+  descripcion: string;
+  precio: number;
+  stock: number;
+  imagen: string;
 }
-function BotonProducto({id}: BotonProductoProps){
-    return(
-    <Link to={`/producto/${id}`} className=" btn btn-primary"> ver producto</Link>
-    )
+
+function BotonProducto(props: BotonProductoProps) {
+  return (
+    <Link
+      to={`/producto/${props.id}`}
+      state={props}
+      className="btn btn-primary"
+    >
+      ver producto
+    </Link>
+  );
 }
-export default BotonProducto    
+
+export default BotonProducto;
