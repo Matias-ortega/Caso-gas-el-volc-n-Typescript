@@ -1,6 +1,7 @@
-function Inicio(){
-    return(
-    <h1>HOLA INICIO</h1>
-    )
+import PortadaInicio from "../organism/PortadaInicio";
+
+function Inicio() {
+  return <PortadaInicio />;
 }
+
 export default Inicio;

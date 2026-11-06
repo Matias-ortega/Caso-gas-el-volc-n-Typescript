@@ -16,6 +16,13 @@
     outline-offset: 2px;
   }
 }
+#root {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  text-align: initial;
+}
 
 .hero {
   position: relative;

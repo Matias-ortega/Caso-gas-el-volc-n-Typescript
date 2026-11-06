@@ -1,5 +1,6 @@
 import CardProductos from "../molecule/CardProducto";
 import { useState } from "react";
+
 export interface Producto {
   id: number;
   titulo: string;
@@ -8,7 +9,7 @@ export interface Producto {
   stock: number;
   imagen: string;
 }
-const productosIniciales: Producto[] = [
+export const productosIniciales: Producto[] = [
   {
     id: 1,
     titulo: "Galon de gas de 5kg",
@@ -132,16 +133,19 @@ function Productos() {
   return productosIniciales;
 });
 
-  return (
-    <div>
-      <h1>PRODUCTOS</h1>
-      <div className="d-flex flex-wrap gap-3">
-        {productos.map((p) => (
-          <CardProductos key={p.id} {...p} />
-        ))}
-      </div>
+ return (
+  <div className="container-fluid px-3 px-md-4 mt-3">
+    <h1 className="text-center mb-4">PRODUCTOS</h1>
+
+    <div className="row g-3">
+      {productos.map((p) => (
+        <div key={p.id} className="col-12 col-md-6 col-lg-4 col-xl-3">
+          <CardProductos {...p} />
+        </div>
+      ))}
     </div>
-  );
+  </div>
+);
 }
 
 export default Productos;

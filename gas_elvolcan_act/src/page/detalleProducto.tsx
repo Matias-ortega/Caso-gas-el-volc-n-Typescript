@@ -23,9 +23,9 @@ function DetalleProducto() {
   }
 
   return (
-    <div className="container mt-4">
-      <div className="row">
-        <div className="col-md-6">
+    <div className="container-fluid px-3 px-md-4 mt-4">
+    <div className="row g-4 align-items-center">
+      <div className="col-12 col-md-6 text-center">
           <img
             src={producto.imagen}
             alt={producto.titulo}
@@ -34,7 +34,7 @@ function DetalleProducto() {
           />
         </div>
 
-        <div className="col-md-6">
+        <div className="col-12 col-md-6">
           <h2>{producto.titulo}</h2>
           <p>{producto.descripcion}</p>
           <h4>${producto.precio}</h4>
