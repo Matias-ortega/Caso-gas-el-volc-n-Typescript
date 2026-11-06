@@ -1,3 +1,4 @@
+// @vitest-environment jsdom
 import { it, expect } from "vitest";
 import { render, screen, fireEvent } from "@testing-library/react";
 import PanelReparto from "../organism/PanelRepartidor";

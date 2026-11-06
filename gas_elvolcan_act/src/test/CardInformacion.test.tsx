@@ -1,9 +1,10 @@
+// @vitest-environment jsdom
 import { it, expect } from "vitest";
 import { render, screen } from "@testing-library/react";
 import { MemoryRouter } from "react-router-dom";
 import CardProductos from "../molecule/CardProducto";
 
-it("40. CardProductos muestra título, descripción e imagen", () => {
+it("CardProductos muestra título, descripción e imagen", () => {
   render(
     <MemoryRouter>
       <CardProductos

@@ -1,3 +1,4 @@
+// @vitest-environment jsdom
 import { it, expect } from "vitest";
 import { cargarUsuarios } from "../organism/FormularioRegistro";
 
